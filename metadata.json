@@ -1,0 +1,6 @@
+{
+  "name": "PUBG Clicker TMA",
+  "description": "Premium PUBG-themed Telegram Clicker Game with Real-time Supply Drops.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["gaming"]
+}

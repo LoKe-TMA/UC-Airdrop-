@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-zinc-950: #09090b;
+  --color-zinc-900: #18181b;
+  --color-zinc-800: #27272a;
+  --color-zinc-700: #3f3f46;
+  --color-yellow-500: #eab308;
+  --color-yellow-600: #ca8a04;
+}
+
+body {
+  background-color: var(--color-zinc-950);
+  color: #fff;
+  overscroll-behavior: none;
+  user-select: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(234, 179, 8, 0.2);
+  border-radius: 10px;
+}
+
+/* Metallic Text Shadow (Vibrant Palette style) */
+.text-metallic {
+  background: linear-gradient(to bottom, #fff 0%, #aaa 50%, #888 51%, #ccc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.5));
+}
+
+/* Glowing Border/Shadows */
+.glow-gold {
+  box-shadow: 0 0 15px rgba(234, 179, 8, 0.3);
+}
+
+/* Remove tap highlight */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
